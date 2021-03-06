@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PDM_2021_P2_LABORATORIO2</string>
+    <string name="txtTitulo">Registro</string>
+    <string name="txtNombre">Nombre</string>
+    <string name="txtClase">Clase</string>
+    <string name="txtMatricula">Matricula</string>
+    <string name="txtNotas">Notas</string>
+</resources>
