@@ -14,5 +14,7 @@
     <string name="txtAlumno">Nombre Alumno </string>
     <string name="txtAsignatura">Nombre de la Clase</string>
     <string name="txtMatricular">Matricular</string>
+    <string name="todo">TODO</string>
+    <string name="todo1">TODO</string>
 
 </resources>
