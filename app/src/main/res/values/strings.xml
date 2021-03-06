@@ -3,6 +3,17 @@
     <string name="txtTitulo">Registro</string>
     <string name="txtNombre">Nombre</string>
     <string name="txtClase">Clase</string>
+    <string name="txtNota">Nota</string>
     <string name="txtMatricula">Matricula</string>
-    <string name="txtNotas">Notas</string>
+    <string name="txtCuenta">Cuenta</string>
+    <string name="txtNombre1">Nombre</string>
+    <string name="txtCorreo">Correo</string>
+    <string name="txvRegistrar">Registrar</string>
+    <string name="txvRegistro">Registro Alumno</string>
+    <string name="txtMatricula1">Registro de Matricula</string>
+    <string name="txtAlumno">Nombre </string>
+    <string name="txtAsignatura">Nombre de la Clase</string>
+    <string name="txtMatricular">Matricular</string>
+    <string name="todo">TODO</string>
+    <string name="todo">TODO</string>
 </resources>

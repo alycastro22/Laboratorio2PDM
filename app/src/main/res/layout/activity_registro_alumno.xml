@@ -7,4 +7,103 @@
     android:background="@drawable/fondo6"
     tools:context=".RegistroAlumno">
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="100dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/registro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtCuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="66dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="@font/arbutus_slab"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="@string/txtCuenta"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/txtNombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="66dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="@font/arbutus_slab"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="@string/txtNombre"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        app:layout_constraintBottom_toTopOf="@+id/txtCorreo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCuenta" />
+
+    <EditText
+        android:id="@+id/txtCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="50dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="@font/arbutus_slab"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="@string/txtCorreo"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        app:layout_constraintEnd_toEndOf="@+id/txtNombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
+
+    <TextView
+        android:id="@+id/txtRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="170dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/arbutus_slab"
+        android:text="@string/txvRegistro"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/txtRegistrar"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_registrar"
+        android:fontFamily="@font/arbutus_slab"
+        android:gravity="center"
+        android:text="@string/txvRegistrar"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCorreo" />
 </androidx.constraintlayout.widget.ConstraintLayout>
