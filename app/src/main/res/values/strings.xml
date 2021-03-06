@@ -11,9 +11,8 @@
     <string name="txvRegistrar">Registrar</string>
     <string name="txvRegistro">Registro Alumno</string>
     <string name="txtMatricula1">Registro de Matricula</string>
-    <string name="txtAlumno">Nombre </string>
+    <string name="txtAlumno">Nombre Alumno </string>
     <string name="txtAsignatura">Nombre de la Clase</string>
     <string name="txtMatricular">Matricular</string>
-    <string name="todo">TODO</string>
-    <string name="todo">TODO</string>
+
 </resources>
