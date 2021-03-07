@@ -82,7 +82,7 @@
         android:id="@+id/txtRegistrar"
         android:layout_width="250dp"
         android:layout_height="70dp"
-        android:layout_marginBottom="70dp"
+        android:layout_marginBottom="50dp"
         android:background="@drawable/btn_matricula"
         android:fontFamily="@font/arbutus_slab"
         android:gravity="center"

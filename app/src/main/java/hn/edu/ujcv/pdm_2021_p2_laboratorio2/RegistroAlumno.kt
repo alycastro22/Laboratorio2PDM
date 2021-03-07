@@ -5,10 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 
-class RegistrarAlumno : AppCompatActivity() {
+class RegistroAlumno : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_registrar_clase)
+        setContentView(R.layout.activity_registro_alumno)
     }
     fun cambioPantalla(view: View) {
         val cambio = Intent(this, MainActivity::class.java)

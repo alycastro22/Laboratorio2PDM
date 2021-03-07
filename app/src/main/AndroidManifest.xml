@@ -12,7 +12,6 @@
         <activity android:name=".RegistrarClase"></activity>
         <activity android:name=".IngresarNotas" />
         <activity android:name=".RealizarMatricula" />
-        <activity android:name=".RegistrarAlumno" />
         <activity android:name=".RegistroAlumno" />
         <activity android:name=".MainActivity">
             <intent-filter>
