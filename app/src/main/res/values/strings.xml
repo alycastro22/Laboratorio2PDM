@@ -3,18 +3,28 @@
     <string name="txtTitulo">Registro</string>
     <string name="txtNombre">Nombre</string>
     <string name="txtClase">Clase</string>
-    <string name="txtNota">Nota</string>
     <string name="txtMatricula">Matricula</string>
-    <string name="txtCuenta">Cuenta</string>
-    <string name="txtNombre1">Nombre</string>
-    <string name="txtCorreo">Correo</string>
+    <string name="txtNotas">Notas</string>
+    <string name="editTextCodigo">Codigo</string>
+    <string name="editTextNombre">Nombre</string>
+    <string name="editTextSeccion">Seccion</string>
+    <string name="editTextHora">Hora</string>
+    <string name="editTextEdificioPiso">Edificio/Piso</string>
+    <string name="editTextAula">Aula</string>
+    <string name="txvRegistrarClase">Registrar Clase</string>
     <string name="txvRegistrar">Registrar</string>
-    <string name="txvRegistro">Registro Alumno</string>
-    <string name="txtMatricula1">Registro de Matricula</string>
-    <string name="txtAlumno">Nombre Alumno </string>
-    <string name="txtAsignatura">Nombre de la Clase</string>
-    <string name="txtMatricular">Matricular</string>
-    <string name="todo">TODO</string>
-    <string name="todo1">TODO</string>
+    <string name="txvIngresarNotas">Ingresar Notas</string>
+    <string name="imageViewRegistro">Registro</string>
+    <string name="editTextAlumno">Alumno</string>
+    <string name="editTextClase">Clase</string>
+    <string name="eeditTextAcumulativo">Acumulativo</string>
+    <string name="editTextExamen">Examen</string>
+    <string name="editTextTotal">Total</string>
+    <string name="txvEnviar">Enviar</string>
+
+
+
+
+
 
 </resources>
