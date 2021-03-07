@@ -1,30 +1,30 @@
 <resources>
     <string name="app_name">PDM_2021_P2_LABORATORIO2</string>
-    <string name="txtTitulo">Registro</string>
+    <string name="txtTitulo">MENÚ</string>
     <string name="txtNombre">Nombre</string>
+    <string name="txtCuenta">Cuenta</string>
+    <string name="txtCorreo">Correo</string>
     <string name="txtClase">Clase</string>
-    <string name="txtMatricula">Matricula</string>
-    <string name="txtNotas">Notas</string>
+    <string name="btnRM">Realizar Matrícula</string>
+    <string name="btnRA">Registrar Alumno</string>
     <string name="editTextCodigo">Codigo</string>
     <string name="editTextNombre">Nombre</string>
     <string name="editTextSeccion">Seccion</string>
     <string name="editTextHora">Hora</string>
     <string name="editTextEdificioPiso">Edificio/Piso</string>
     <string name="editTextAula">Aula</string>
-    <string name="txvRegistrarClase">Registrar Clase</string>
-    <string name="txvRegistrar">Registrar</string>
-    <string name="txvIngresarNotas">Ingresar Notas</string>
-    <string name="imageViewRegistro">Registro</string>
-    <string name="editTextAlumno">Alumno</string>
-    <string name="editTextClase">Clase</string>
+    <string name="txvRegistrarClase">REGISTRAR CLASE</string>
+    <string name="txvRegistrar">REGISTRAR</string>
+    <string name="txvIngresarNotas">INGRESAR NOTAS</string>
+    <string name="btnIN">Ingresar Notas</string>
+    <string name="todo">Registro</string>
+    <string name="txtAlumno">Alumno</string>
+    <string name="txtMatricula">MATRICULA</string>
+    <string name="txtAsignatura">Asignatura</string>
+    <string name="btnRC">Registrar Clase</string>
     <string name="eeditTextAcumulativo">Acumulativo</string>
     <string name="editTextExamen">Examen</string>
     <string name="editTextTotal">Total</string>
-    <string name="txvEnviar">Enviar</string>
-
-
-
-
-
-
+    <string name="txvEnviar">ENVIAR</string>
+    <string name="txtRegistrarAlumno">REGISTRAR ALUMNO</string>
 </resources>
