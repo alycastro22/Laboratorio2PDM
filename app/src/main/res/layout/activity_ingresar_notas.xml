@@ -96,24 +96,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextAcumulativo" />
 
-    <EditText
-        android:id="@+id/editTextTotal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:autofillHints=""
-        android:backgroundTint="@color/white"
-        android:ems="8"
-        android:gravity="center"
-        android:hint="@string/editTextTotal"
-        android:inputType="number"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#FFFFFF"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextExamen" />
-
     <TextView
         android:id="@+id/txvEnviar"
         android:layout_width="270dp"
