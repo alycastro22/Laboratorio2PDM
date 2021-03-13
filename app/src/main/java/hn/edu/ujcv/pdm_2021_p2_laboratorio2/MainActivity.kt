@@ -32,4 +32,7 @@ class MainActivity : AppCompatActivity() {
         startActivity(cambio)
     }
 
+
+    fun Registrar(view: View) {}
+
 }
