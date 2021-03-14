@@ -7,25 +7,44 @@
     android:background="@drawable/fondo6"
     tools:context=".RealizarMatricula">
 
+    <EditText
+        android:id="@+id/txtcorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="19dp"
+        android:autofillHints=""
+        android:backgroundTint="@color/white"
+        android:ems="8"
+        android:gravity="center"
+        android:hint="@string/txtCorreo"
+        android:inputType="textPersonName"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/enviar"
+        app:layout_constraintEnd_toStartOf="@+id/enviar" />
+
     <TextView
         android:id="@+id/txtMatricula"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
+        android:layout_marginEnd="83dp"
         android:fontFamily="@font/arbutus_slab"
         android:text="@string/txtMatricula"
         android:textColor="#fff"
         android:textColorHint="#fff"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/txtAlumno"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="320dp"
+        android:layout_marginTop="236dp"
+        android:layout_marginEnd="81dp"
         android:autofillHints=""
         android:backgroundTint="@color/white"
         android:ems="8"
@@ -36,15 +55,13 @@
         android:textColorHint="#fff"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/txtAsignatura"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="19dp"
         android:autofillHints=""
         android:backgroundTint="@color/white"
         android:ems="8"
@@ -54,15 +71,16 @@
         android:textColor="#fff"
         android:textColorHint="#fff"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txtAlumno"
         app:layout_constraintTop_toBottomOf="@+id/txtAlumno" />
 
     <TextView
         android:id="@+id/txtMatricular"
-        android:layout_width="250dp"
+        android:layout_width="0dp"
         android:layout_height="70dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="72dp"
         android:layout_marginBottom="50dp"
         android:background="@drawable/btn_matricula"
         android:fontFamily="@font/arbutus_slab"
@@ -71,31 +89,57 @@
         android:textColor="#fff"
         android:textColorHint="#fff"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/enviar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAsignatura" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="110dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="35dp"
         android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toTopOf="@+id/txtAlumno"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtMatricula"
         app:srcCompat="@drawable/matricula" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
         android:contentDescription="@string/todo"
         android:onClick="cambioPantalla"
         android:rotation="180"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/retroceder" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/enviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="132dp"
+        android:contentDescription="@string/todo1"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_dialog_email"
+        tools:ignore="MissingConstraints" />
+
+    <ListView
+        android:id="@+id/lstView"
+        android:layout_width="0dp"
+        android:layout_height="61dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
