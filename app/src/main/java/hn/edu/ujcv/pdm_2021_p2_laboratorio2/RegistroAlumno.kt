@@ -39,7 +39,6 @@ class RegistroAlumno : AppCompatActivity() {
             valores.put(numero, dato.toString())
             Toast.makeText(this, "Su alumno ha sido guardado con exito", Toast.LENGTH_LONG).show()
             enviar.isEnabled = true
-            limpiar()
 
         }else{
             ingresarDatos()

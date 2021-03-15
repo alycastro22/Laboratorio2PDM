@@ -47,7 +47,6 @@ class RegistrarClase : AppCompatActivity() {
             valores.put(numero, dato.toString())
             Toast.makeText(this,"Su clase ha sido guardada con exito", Toast.LENGTH_LONG).show()
             enviar.isEnabled = true
-            limpiar()
 
         }else{
             ingresarDatos()
