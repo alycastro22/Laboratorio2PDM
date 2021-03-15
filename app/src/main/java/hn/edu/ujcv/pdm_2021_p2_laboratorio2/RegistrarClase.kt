@@ -6,7 +6,10 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_mostrar_registro_clase.*
+import kotlinx.android.synthetic.main.activity_mostrar_registro_clase.txtNombre
 import kotlinx.android.synthetic.main.activity_registrar_clase.*
+import kotlinx.android.synthetic.main.activity_registrar_clase.enviar
+import kotlinx.android.synthetic.main.activity_registro_alumno.*
 import java.lang.StringBuilder
 
 class RegistrarClase : AppCompatActivity() {
@@ -16,6 +19,14 @@ class RegistrarClase : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registrar_clase)
+        inicializar()
+        txvRegistrar.setOnClickListener{ guardarclase() }
+        enviar.setOnClickListener { enviarclase() }
+
+    }
+
+    private fun inicializar() {
+        enviar.isEnabled = false
     }
 
     fun cambioPantalla(view: View) {
@@ -34,11 +45,19 @@ class RegistrarClase : AppCompatActivity() {
             dato.append(txtEdificio.text.toString().trim()).append("|")
             dato.append(txtAula.text.toString().trim())
             valores.put(numero, dato.toString())
-            Toast.makeText(this,"Su clase ha sido guardada con exito", Toast.LENGTH_LONG)
+            Toast.makeText(this,"Su clase ha sido guardada con exito", Toast.LENGTH_LONG).show()
+            enviar.isEnabled = true
+            limpiar()
 
         }else{
             ingresarDatos()
         }
+    }
+
+    private fun enviarclase() {
+        val intent = Intent(this, ClaseActivity::class.java)
+        intent.putExtra("valores", valores)
+        startActivity(intent)
     }
 
 
@@ -62,11 +81,16 @@ class RegistrarClase : AppCompatActivity() {
             Toast.makeText(this,"Ingresar el aula", Toast.LENGTH_LONG).show()
         }
 
-
-
     }
 
-
+    private fun limpiar() {
+        txtCodigo.text.clear()
+        textNombre.text.clear()
+        txtSeccion.text.clear()
+        txtHora.text.clear()
+        txtEdificio.text.clear()
+        txtAula.text.clear()
+    }
 
 
 }
