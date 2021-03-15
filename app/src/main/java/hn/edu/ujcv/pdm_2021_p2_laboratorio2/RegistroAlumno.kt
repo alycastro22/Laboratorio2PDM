@@ -34,7 +34,7 @@ class RegistroAlumno : AppCompatActivity() {
             dato.append(txtCuenta.text.toString().trim()).append("|")
             dato.append(txtNombre.text.toString().trim()).append("|")
             dato.append(txtCorreo.text.toString())
-            valores[numero] = dato.toString()
+            valores.put(numero,dato.toString())
             Toast.makeText(this, "Su alumno ha sido guardado con exito", Toast.LENGTH_LONG).show()
             enviar.isEnabled = true
 

@@ -39,7 +39,7 @@ class RegistrarClase : AppCompatActivity() {
             dato.append(txtHora.text.toString().trim()).append("|")
             dato.append(txtEdificio.text.toString().trim()).append("|")
             dato.append(txtAula.text.toString())
-            valores[numero] = dato.toString()
+            valores.put(numero,dato.toString())
             Toast.makeText(this,"Su clase ha sido guardada con exito", Toast.LENGTH_LONG).show()
             enviar.isEnabled = true
 
