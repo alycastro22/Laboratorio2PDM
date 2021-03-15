@@ -6,7 +6,7 @@ import kotlinx.android.synthetic.main.activity_alumno.*
 
 
 class AlumnoActivity : AppCompatActivity() {
-    var valores: HashMap<Int, String> = hashMapOf()
+    private var valores: HashMap<Int, String> = hashMapOf()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_alumno)
@@ -15,8 +15,9 @@ class AlumnoActivity : AppCompatActivity() {
     }
 
     private fun iniciabilizar() {
-        var intent = intent
-        valores = intent.getSerializableExtra("valores") as HashMap<Int, String>
+        val intent = intent
+
+        valores = intent.getSerializableExtra("valoresalumno") as HashMap<Int, String>
         var cuenta = ""
         var nombre = ""
         var correo = ""
@@ -27,6 +28,7 @@ class AlumnoActivity : AppCompatActivity() {
             nombre = lista[2]
             correo = lista[3]
         }
-        txtResultadoAlumno.text = getString(R.string.resultadoalumno, nombre, cuenta, correo)
+
+        txvResultadoAlumno.text = getString(R.string.resultadoalumno, nombre, cuenta, correo)
     }
 }

@@ -8,13 +8,12 @@
     tools:context=".ClaseActivity">
 
     <TextView
-        android:id="@+id/txtResultadoClase"
+        android:id="@+id/txvResultadoClase"
         android:layout_width="275dp"
         android:layout_height="180dp"
         android:layout_marginStart="68dp"
         android:layout_marginTop="208dp"
         android:layout_marginEnd="68dp"
-        android:text="Clase"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"

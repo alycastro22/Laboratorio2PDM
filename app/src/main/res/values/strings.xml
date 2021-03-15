@@ -30,7 +30,7 @@
     <string name="btnAgregar">weyYa</string>
     <string name="todo1">TODO</string>
     <string name="Datos">Enviar notas de %S, en la clase %S por el valor de %S</string>
-    <string name="resultadoalumno">El alumno %s, con numero de cuenta %s y correo %S, ha sido matriculado con exito</string>
+    <string name="resultadoalumno">El alumno %S, con numero de cuenta %S y correo %S, ha sido matriculado con exito</string>
     <string name="txvRegresar">Regresar</string>
-    <string name="resultadoClase">La clase %s, con codigo %s  esta en el edificio %s, con horario %s en el aula %s, con seccion %s </string>
+    <string name="resultadoClase">La clase %S, con codigo %S  esta en el edificio %S, con horario %S en el aula %S, con seccion %S </string>
 </resources>
