@@ -57,6 +57,12 @@ class RealizarMatricula : AppCompatActivity() {
         startActivity(cambio)
     }
     fun guardarmatricula(){
+        if (txtAlumno.text.isEmpty()){
+            Toast.makeText(this, "Ingrese el nombre del alumno", Toast.LENGTH_LONG).show()
+        }
+        if (txtAsignatura.text.isEmpty()){
+            Toast.makeText(this, "Ingrese una asignatura", Toast.LENGTH_LONG).show()
+        }
         if (txtAlumno.text.isNotEmpty() && txtAsignatura.text.isNotEmpty()){
             val dato = StringBuilder()
             numero+1
@@ -78,13 +84,8 @@ class RealizarMatricula : AppCompatActivity() {
             builder.show()
 
 
-        }else{
-            if (txtAlumno.text.isEmpty()){
-                Toast.makeText(this, "Ingrese el nombre del alumno", Toast.LENGTH_LONG)
-            }
-            if (txtAsignatura.text.isEmpty()){
-                Toast.makeText(this, "Ingrese una asignatura", Toast.LENGTH_LONG)
-            }
         }
+
     }
+
 }
