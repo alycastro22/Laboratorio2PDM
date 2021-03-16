@@ -76,17 +76,17 @@ class IngresarNotas : AppCompatActivity() {
         if (editTextAlumno.text.isEmpty()){
             Toast.makeText(this,"Ingrese un alumno", Toast.LENGTH_LONG).show()
         }
-        else if (editTextClase.text.isEmpty()){
+        if (editTextClase.text.isEmpty()){
             Toast.makeText(this,"Ingrese una clase", Toast.LENGTH_LONG).show()
         }
-        else if (editTextAcumulativo.text.isEmpty()){
+        if (editTextAcumulativo.text.isEmpty()){
             Toast.makeText(this,"Ingrese la nota del acumulativo", Toast.LENGTH_LONG).show()
         }
-        else if (editTextExamen.text.isEmpty()){
+        if (editTextExamen.text.isEmpty()){
             Toast.makeText(this,"Ingrese la nota del examen", Toast.LENGTH_LONG).show()
         }
 
-        else if (editTextAlumno.text.isNotEmpty() && editTextClase.text.isNotEmpty() && editTextAcumulativo.text.isNotEmpty() && editTextExamen.text.isNotEmpty()
+         if (editTextAlumno.text.isNotEmpty() && editTextClase.text.isNotEmpty() && editTextAcumulativo.text.isNotEmpty() && editTextExamen.text.isNotEmpty()
                 && editTextExamen.text.toString().toDouble()> 0 && editTextExamen.text.toString().toDouble() < 51 && editTextAcumulativo.text.toString().toDouble()> 0 && editTextAcumulativo.text.toString().toDouble() < 51) {
 
             var dato = StringBuilder()
