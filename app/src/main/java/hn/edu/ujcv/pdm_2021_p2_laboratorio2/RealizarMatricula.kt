@@ -11,6 +11,8 @@ import android.widget.Toast
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_realizar_matricula.*
+import kotlinx.android.synthetic.main.activity_realizar_matricula.lstCView
+import kotlinx.android.synthetic.main.activity_realizar_matricula.txtcorreo
 import java.lang.StringBuilder
 import java.util.*
 import kotlin.collections.HashMap
@@ -25,10 +27,15 @@ class RealizarMatricula : AppCompatActivity() {
         setContentView(R.layout.activity_realizar_matricula)
         txtMatricular.setOnClickListener { guardarmatricula() }
 
-        findViewById<FloatingActionButton>(R.id.enviar).setOnClickListener { view ->
-            addListItem()
-            Snackbar.make(view, "Enviar matricula", Snackbar.LENGTH_LONG)
-                .setAction("Deshacer", deshacerOnClickListener).show()
+        findViewById<FloatingActionButton>(R.id.enviara).setOnClickListener { view ->
+            if (txtcorreo.text.isNotEmpty()){
+                addListItem()
+                Snackbar.make(view, "Enviar matricula", Snackbar.LENGTH_LONG)
+                        .setAction("Deshacer", deshacerOnClickListener).show()
+            }else{
+                Toast.makeText(this,"Ingrese correo", Toast.LENGTH_LONG).show()
+            }
+
         }
     }
 
@@ -53,7 +60,7 @@ class RealizarMatricula : AppCompatActivity() {
                 listItens
             )
 
-            lstView.adapter = adapter
+            lstCView.adapter = adapter
         }
 
         fun cambioPantalla(view: View) {
@@ -74,12 +81,14 @@ class RealizarMatricula : AppCompatActivity() {
                 dato.append(txtAlumno.text.toString().trim()).append("|")
                 dato.append(txtAsignatura.text.toString())
                 valores.put(numero, dato.toString())
+
+
                 val builder = AlertDialog.Builder(this)
                 builder.setTitle("Confirmación Recarga")
                 builder.setMessage("¿Desea enviar Matricula por correo?")
                 builder.setPositiveButton("Enviar", { dialogInterface: DialogInterface, i: Int ->
                     txtcorreo.visibility = View.VISIBLE
-                    enviar.visibility = View.VISIBLE
+                    enviara.visibility = View.VISIBLE
 
 
                 })

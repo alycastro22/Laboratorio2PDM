@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@drawable/fondo6"
     tools:context=".RealizarMatricula">
 
@@ -22,8 +22,8 @@
         android:textColorHint="#fff"
         android:textSize="24sp"
         android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="@+id/enviar"
-        app:layout_constraintEnd_toStartOf="@+id/enviar" />
+        app:layout_constraintBottom_toBottomOf="@+id/enviara"
+        app:layout_constraintEnd_toStartOf="@+id/enviara" />
 
     <TextView
         android:id="@+id/txtMatricula"
@@ -89,7 +89,7 @@
         android:textColor="#fff"
         android:textColorHint="#fff"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/enviar"
+        app:layout_constraintBottom_toTopOf="@+id/enviara"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtAsignatura" />
@@ -122,7 +122,7 @@
 
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/enviar"
+        android:id="@+id/enviara"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
@@ -136,7 +136,7 @@
         tools:ignore="MissingConstraints" />
 
     <ListView
-        android:id="@+id/lstView"
+        android:id="@+id/lstCView"
         android:layout_width="0dp"
         android:layout_height="61dp"
         app:layout_constraintBottom_toBottomOf="parent"

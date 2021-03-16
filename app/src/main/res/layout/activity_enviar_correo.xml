@@ -22,7 +22,7 @@
         android:textColor="#fff"
         android:textColorHint="#fff"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/lstView"
+        app:layout_constraintBottom_toTopOf="@+id/lstCView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtDatos"
@@ -72,7 +72,7 @@
         app:srcCompat="@drawable/retroceder" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/enviar"
+        android:id="@+id/enviara"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
@@ -81,16 +81,16 @@
         android:contentDescription="@string/todo1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lstView"
+        app:layout_constraintTop_toBottomOf="@+id/lstCView"
         app:srcCompat="@android:drawable/ic_dialog_email"
         tools:ignore="MissingConstraints" />
 
     <ListView
-        android:id="@+id/lstView"
+        android:id="@+id/lstCView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="63dp"
-        app:layout_constraintBottom_toTopOf="@+id/enviar"
+        app:layout_constraintBottom_toTopOf="@+id/enviara"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtcorreo" />

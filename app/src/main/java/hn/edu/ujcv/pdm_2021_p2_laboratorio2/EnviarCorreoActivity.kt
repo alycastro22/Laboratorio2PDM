@@ -8,9 +8,8 @@ import android.widget.ArrayAdapter
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_enviar_correo.*
-import kotlinx.android.synthetic.main.activity_enviar_correo.lstView
+import kotlinx.android.synthetic.main.activity_enviar_correo.lstCView
 import kotlinx.android.synthetic.main.activity_enviar_correo.txtcorreo
-import kotlinx.android.synthetic.main.activity_realizar_matricula.*
 import java.util.ArrayList
 
 class EnviarCorreoActivity : AppCompatActivity() {
@@ -21,7 +20,7 @@ class EnviarCorreoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_enviar_correo)
         mostrarenPantalla()
-        findViewById<FloatingActionButton>(R.id.enviar).setOnClickListener { view ->
+        findViewById<FloatingActionButton>(R.id.enviara).setOnClickListener { view ->
             addListItem()
             Snackbar.make(view, "Enviar Notas", Snackbar.LENGTH_LONG)
                 .setAction("Deshacer", deshacerOnClickListener).show()
@@ -49,7 +48,7 @@ class EnviarCorreoActivity : AppCompatActivity() {
             android.R.layout.simple_list_item_1,
             listItens)
 
-        lstView.adapter = adapter
+        lstCView.adapter = adapter
     }
 
    fun mostrarenPantalla(){
